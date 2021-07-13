@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    tools:context=".Home">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <TextView
+           android:id="@+id/today"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="32dp"
+           android:text="Today"
+           android:textColor="@color/black"
+           android:textSize="20dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.498"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <ImageView
+           android:id="@+id/imageView2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@mipmap/homeicon"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/today"
+           app:layout_constraintVertical_bias="0.085" />
+
+       <RelativeLayout
+           android:id="@+id/relativeLayout"
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:layout_marginTop="28dp"
+           android:orientation="horizontal"
+           android:padding="8dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="12dp"
+               android:background="@drawable/circle_mints"
+               android:text="25 M"
+               android:textColor="@color/black"
+               android:onClick="TewntyFive"
+               android:textStyle="bold" />
+
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_marginLeft="5dp"
+               android:onClick="ThrityFive"
+               android:background="@drawable/circle_mints"
+               android:text="35 M"
+               android:textColor="@color/black"
+               android:textStyle="bold" />
+
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentEnd="true"
+               android:layout_marginEnd="12dp"
+               android:onClick="Hour"
+               android:background="@drawable/circle_mints"
+               android:text="60 M"
+               android:textColor="@color/black"
+               android:textStyle="bold" />
+
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:id="@+id/relativeLayout2"
+           android:layout_width="match_parent"
+           android:layout_height="25dp"
+           android:gravity="center"
+           android:layout_marginTop="10dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+           app:layout_constraintVertical_bias="0.243">
+
+           <TextView
+               android:id="@+id/textView2"
+               android:textSize="15dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="12dp"
+               android:text="Today's achievement : "
+               android:textColor="@color/Red" />
+           <TextView
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/mints"
+               android:layout_toRightOf="@+id/textView2"
+               android:textColor="@color/black"
+               android:text="0 M"
+               />
+       </RelativeLayout>
+
+
+       <TextView
+           android:layout_marginTop="30dp"
+           android:id="@+id/textslide"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="12dp"
+           android:layout_marginEnd="12dp"
+           android:gravity="center"
+           android:text="Nothing is impossible, the word itself says “I’m possible”!"
+           android:textColor="@color/black"
+           android:textSize="15dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+           app:layout_constraintVertical_bias="0.471" />
+
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
