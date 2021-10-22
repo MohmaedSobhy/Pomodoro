@@ -1,4 +1,5 @@
 # Pomodoro
+you can see the project https://youtu.be/izW3AmUqTfI <br>
 Android studio app </br>
 This app is a time management method the technique 
 uses a time to break down work into intervals, traditionally (25-35-60)
